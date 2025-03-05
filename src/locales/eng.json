@@ -1,0 +1,109 @@
+{
+    "app": {
+        "language": {
+            "eng": "English",
+            "fr": "French"
+        },
+        "languageSelectorInGame": "You can't change language during game",
+        "backendIssuesMessage": "Oops! We're experiencing some issues on our end. Please check back later.",
+        "popup": {            
+            "notice": "Notice",
+            "message": "The first request may experience a brief delay as the service starts up. Thanks for your patience!",
+            "dontShowAgain": "Don't show this pop-up for 24h",
+            "gotIt": "Got it"
+        }
+    },
+    "home": {
+        "singlePlayer": "Single Player",
+        "multiPlayer": "Multiplayer"
+    },
+    "singlePlayer": {
+        "categories": {
+            "title": "Create Game",
+            "numberOfQuestions": "Number of questions",
+            "questionRange": "questions",
+            "minutes": "minutes",
+            "secondes": "secondes",
+            "categories": "Themes",
+            "timer": "Time",
+            "timesValue": "seconds",
+            "copyLink": "Copy link",
+            "return": "Back",
+            "start": "Start",
+            "unknownCategory": "Unknown category"
+        },
+        "game": {
+            "title": "Question"
+        },
+        "results": {
+            "score": "Score",
+            "title": "Results",
+            "tryAgain": "Try again",
+            "home": "Home"
+        }
+    },
+    "multiPlayer": {
+        "chat": {
+            "messagePlaceholder": "Type your message"
+        },
+        "lobby": {
+            "welcomeMessage": "Welcome",
+            "username": "Username",
+            "usernamePlaceholder": "Enter your username",
+            "room": "Room",
+            "join": "Join a room",
+            "create": "Create a room",
+            "roomId": "Room ID",
+            "roomIdPlaceholder": "Enter the room ID",
+            "requiredField": "This field is required",
+            "usernameHasSpecialCharacters": "Invalid username",
+            "startQuiz": "Start the Quiz",
+            "createRoom": "Create a room",
+            "joinRoom": "Join a room"
+        },
+        "playersList": {
+            "copiedToClipboard": "copied to clipboard",
+            "copyLink": "Copy link",
+            "failToCopy": "Failed to copy text",
+            "players": "Players",
+            "waitingForOtherPlayers": "Waiting for other players..."
+        },
+        "questionInformations": {
+            "title": "Question",
+            "unknownCategory": "Unknown category",
+            "langIsDifferentFromAdmin": "You will display the Admin's language and return to yours once the game is finished."
+        },
+        "categories": {
+            "title": "Create Game",
+            "numberOfQuestions": "Number of questions",
+            "questionRange": "questions",
+            "minutes": "minutes",
+            "secondes": "secondes",
+            "categories": "Themes",
+            "timer": "Time",
+            "timesValue": "seconds",
+            "return": "Back",
+            "start": "Start",
+            "waiting": "Waiting for player Admin to start the game...",
+            "errorLoading": "There was an error loading categories"
+        },
+        "game": {
+            "loadingQuestion": "Loading question..."
+        },
+        "results": {
+            "title": "Results",
+            "tie":"It's a tie, winners are",
+            "gameWinner":"The winner is",
+            "roundWinner":"The winner of this round is",
+            "playerError": "No players found or results unavailable",
+            "total": "Total",
+            "round": "Round",
+            "rank": "Rank",
+            "name": "Name",
+            "score": "Score",
+            "playerLeft": "quitted",
+            "tryAgain": "Try again",
+            "home": "Home"
+        }
+    }
+}

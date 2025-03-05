@@ -1,0 +1,24 @@
+// Font
+$font-family: 'Roboto', sans-serif;
+
+// Color
+$primary-color: #007bff;
+$secondary-color: #9ec5fe;
+$background-color: #fff;
+$border-color: #dee2e6;
+$input-error-color: #dc3545;
+$right-answer-color:  #198754;
+$neutral-answer-color: #000;
+$wrong-answer-color: #dc3545;
+
+// To use varibles inside vue
+:root {
+  --primary-color: #007bff;
+  --secondary-color: #9ec5fe;
+  --background-color: #fff;
+  --border-color: #dee2e6;
+  --input-error-color: #dc3545;
+  --right-answer-color:  #198754;
+  --neutral-answer-color: #000;
+  --wrong-answer-color: #dc3545;
+}

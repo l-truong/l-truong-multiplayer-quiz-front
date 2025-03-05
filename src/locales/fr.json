@@ -1,0 +1,109 @@
+{ 
+    "app": {
+        "language": {
+            "eng": "Anglais",
+            "fr": "Français"
+        },
+        "languageSelectorInGame": "Vous ne pouvez pas changer de langue pendant le jeu",
+        "backendIssuesMessage": "Oops ! Nous rencontrons quelques problèmes de notre côté. Veuillez revenir plus tard.",
+        "popup": {
+            "notice": "Attention",
+            "message": "La première requête peut subir un léger délai lors du démarrage du service. Merci de votre patience !",
+            "dontShowAgain": "Ne plus me montrer cette pop-up pendant 24h",
+            "gotIt": "C'est compris"
+        }
+    },
+    "home": {
+        "singlePlayer": "Solo",
+        "multiPlayer": "Multijoueur"
+    },
+    "singlePlayer": {
+        "categories": {
+            "title": "Création de partie",
+            "numberOfQuestions": "Nombre de questions",
+            "questionRange": "questions",
+            "minutes": "minutes",
+            "secondes": "secondes",
+            "categories": "Thèmes",
+            "timer": "Temps",
+            "timesValue": "secondes",
+            "copyLink": "Copier le lien",
+            "return": "Retour",
+            "start": "Démarrer",
+            "unknownCategory": "Catégorie inconnue"
+        },
+        "game": {
+            "title": "Question"
+        },
+        "results": {
+            "score": "Score",
+            "title": "Résultats",
+            "tryAgain": "Rejouer",
+            "home": "Accueil"
+        }
+    },
+    "multiPlayer": {
+        "chat": {
+            "messagePlaceholder": "Écrivez votre message"
+        },
+        "lobby": {
+            "welcomeMessage": "Bienvenue",
+            "username": "Nom d'utilisateur",
+            "usernamePlaceholder": "Entrez votre pseudo",
+            "room": "Salle",
+            "join": "Rejoindre une salle",
+            "create": "Créer une salle",
+            "roomId": "ID de la salle",
+            "roomIdPlaceholder": "Entrez l'ID de la salle",
+            "requiredField": "Ce champ est requis",
+            "usernameHasSpecialCharacters": "Nom d'utilisateur non valide",
+            "startQuiz": "Commencer le Quiz",
+            "createRoom": "Créer une salle",
+            "joinRoom": "Rejoindre une salle"
+        },
+        "playersList": {
+            "copiedToClipboard": "copié dans le presse-papier",
+            "copyLink": "Copier le lien",
+            "failToCopy": "Échec de la copie du texte",
+            "players": "Joueurs",
+            "waitingForOtherPlayers": "En attente d'autres joueurs..."
+        },
+        "questionInformations": {
+            "title": "Question",
+            "unknownCategory": "Catégorie inconnue",
+            "langIsDifferentFromAdmin": "Vous afficherez la langue de l'Admin et reviendrez à la vôtre une fois le jeu terminé"
+        },
+        "categories": {
+            "title": "Création de partie",
+            "numberOfQuestions": "Nombre de questions",
+            "questionRange": "questions",
+            "minutes": "minutes",
+            "secondes": "secondes",
+            "categories": "Thèmes",
+            "timer": "Temps",
+            "timesValue": "secondes",
+            "return": "Retour",
+            "start": "Démarrer",
+            "waiting": "En attente que le joueur Admin lance le jeu...",
+            "errorLoading": "Erreur lors du chargement des catégories"
+        },
+        "game": {
+            "loadingQuestion": "Chargement de la question..."
+        },
+        "results": {
+            "title": "Résultats",
+            "tie":"Égalité, les gagnants sont",            
+            "gameWinner":"Le gagnant est",
+            "roundWinner":"Le gagnant de ce tour est",
+            "playerError": "Aucun joueur trouvé ou résultats non disponibles",
+            "total": "Total",
+            "round": "Tour",
+            "rank": "Rang",
+            "name": "Nom",
+            "score": "Score",
+            "playerLeft": "a quitté",
+            "tryAgain": "Rejouer",
+            "home": "Accueil"
+        }
+    }
+}

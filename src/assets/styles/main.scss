@@ -1,0 +1,297 @@
+@import "@/assets/styles/variables";
+
+html,
+body {  
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;  
+  margin: 0;
+  font-family: $font-family;  
+  background: $secondary-color;
+}
+
+#app {
+  height: 100%;
+  width: 100%;
+  display: flex;  
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
+
+  .container {   
+    height: inherit;
+    width: inherit;
+    max-height: 800px;
+    max-width: 1100px;
+    background: $background-color;
+
+    .home {
+      height: inherit;      
+
+      .row {
+        height: inherit;           
+        margin: 0;
+        gap: 1.5rem;   
+
+        .card {
+          height: 45%;
+          transition: transform 0.2s ease-in-out;
+          cursor: pointer;
+
+          &:hover {
+            transform: scale(1.05);
+          }
+        }        
+      }      
+    }
+
+    .singleplayer, .multiplayer {
+      .game {
+        height: inherit;
+        width: inherit;
+
+        &-col1 {
+          height: inherit;
+          width: 30%;
+        }
+  
+        &-col2 {
+          height: inherit;
+          width: 70%;
+        }
+
+        .form-range {
+          width: 20rem;
+        }
+        
+        .countdown {
+          position: relative;
+          width: 10rem;
+          height: 10rem;
+        
+          .circle {
+            position: absolute;            
+            height: 100%;
+            width: 100%;
+            border-radius: 50%;
+            
+            &.background-circle {
+              background-color: $background-color;
+            }
+          }
+        
+          .circle-text {
+            position: absolute;    
+            height: 8.5rem;
+            width: 8.5rem;
+            border-radius: 50%;        
+            background-color: $background-color;
+          }
+        }
+
+        .image-container {
+          width: 75%;
+          max-width: 75%;
+          overflow: hidden;
+
+          .image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+          }
+        }
+        
+        .bottomButtons {
+          opacity: 50%;
+        }        
+      }      
+
+      .lobby {   
+        height: inherit;
+        width: inherit;             
+        
+        input[type='text'],
+        select {          
+          padding: 0.75rem 1.25rem;
+          margin: 0.5rem 0;
+        }      
+
+        .error-message {
+          color: $input-error-color;
+        }
+
+        .is-invalid {
+          border-color: $input-error-color;
+        }
+      }
+    }
+  }
+
+  .languageSelector, .languageSelectorInGame {
+    width: inherit;
+    max-width: 1100px;
+
+    .form-select {
+      width: 10rem;
+    }
+  }
+
+  .display-1 {
+    font-size: 4rem;
+  }
+  .display-2 {
+    font-size: 3rem;
+  }
+  .display-3 {
+    font-size: 2.5rem;
+  }
+  .display-4 {
+    font-size: 2rem;
+  }
+  .display-5 {
+    font-size: 1.75rem;
+  }
+  .display-6 {
+    font-size: 1.5rem;
+  }
+}
+
+
+@media (max-height: 800px), (max-width: 1100px) {
+  html, body {  
+    height: auto;
+    display: block;
+  }
+
+  #app {    
+    height: auto;
+    min-height: auto;
+    width: inherit;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;  
+
+    .container {     
+      max-height: none;
+      width: inherit;
+      max-width: inherit;
+      align-items: start;
+
+      .home {    
+        height: 90vh;
+        
+        .row {   
+          gap: 0rem;  
+          .card {
+            height: 50%;
+            width: 100%;
+            border: 0!important;
+            border-bottom: 1px solid $border-color!important;
+          }        
+        }      
+      }
+
+      .singleplayer, .multiplayer {   
+        .game {
+          flex-direction: column!important;
+          
+          &-col1 {
+            height: auto;
+            width: 100%;
+            border-bottom: 1px solid $border-color!important;
+          }
+    
+          &-col2 {               
+            width: 100%;
+          }
+
+          .form-range {
+            width: 15rem;
+          }
+
+          .countdown {
+            width: 8rem;
+            height: 8rem;
+
+            .circle-text {
+              height: 6.5rem;
+              width: 6.5rem;
+            }
+          }
+
+          .chatbox {
+            min-height: 25vh;
+          }
+
+          .bottomButtons {
+            opacity: 100%;
+          }
+
+          .mobileHide {
+            display: none;
+          }
+        }
+
+        .lobby {   
+          height: 90vh;
+        }
+      }    
+    }
+
+    .multiplayer {
+      min-height: 90vh!important;
+
+      .game {
+        min-height: 90vh!important;
+
+        &-col2 {          
+          border: 0!important;
+        }
+
+        .categoriesWaiting {
+          min-height: 30vh!important;
+        }
+      }
+    }
+    .multiplayer {
+      .game {
+        &-col2 {
+          flex: 1;
+
+          .playersResults {
+            max-height: 500vh!important;
+          }
+        }
+      }
+    }
+
+    .languageSelector, .languageSelectorInGame {
+      width: 100%;
+    }
+    .languageSelectorInGame {
+      padding-right: 0.5rem;
+    }
+  }
+
+  .display-1 {
+    font-size: 3rem!important;
+  }
+  .display-2 {
+    font-size: 2.5rem!important;
+  }
+  .display-3 {
+    font-size: 2rem!important;
+  }
+  .display-4 {
+    font-size: 1.75rem!important;
+  }
+  .display-5 {
+    font-size: 1.5rem!important;
+  }
+  .display-6 {
+    font-size: 1.5rem!important;
+  }
+}
