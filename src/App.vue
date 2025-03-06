@@ -1,5 +1,5 @@
 <template>
-  <div class='container d-flex justify-content-center align-items-center p-0'>
+  <div class='bg-secondary-subtle container d-flex justify-content-center align-items-center p-0'>
     <template v-if='this.categories === null && this.stats === null'>
       <div class='d-flex justify-content-center align-items-center h-100 w-100 p-3'>
         <div class='spinner-border text-primary' role='status'></div>

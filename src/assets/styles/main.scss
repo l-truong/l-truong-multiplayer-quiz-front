@@ -37,11 +37,10 @@ body {
 
         .card {
           height: 45%;
-          transition: transform 0.2s ease-in-out;
           cursor: pointer;
 
           &:hover {
-            transform: scale(1.05);
+            background: $secondary-background-color;
           }
         }        
       }      
@@ -181,7 +180,7 @@ body {
       align-items: start;
 
       .home {    
-        height: 90vh;
+        height: 80vh;
         
         .row {   
           gap: 0rem;  
@@ -236,16 +235,16 @@ body {
         }
 
         .lobby {   
-          height: 90vh;
+          height: 80vh;
         }
       }    
     }
 
     .multiplayer {
-      min-height: 90vh!important;
+      min-height: 80vh!important;
 
       .game {
-        min-height: 90vh!important;
+        min-height: 80vh!important;
 
         &-col2 {          
           border: 0!important;
