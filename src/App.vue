@@ -77,7 +77,6 @@ export default {
     };
   },
   mounted() {
-    console.log("mounted")
     this.updateDataByLanguage();
     this.checkWindowWidth();
     window.addEventListener('resize', this.checkWindowWidth);
