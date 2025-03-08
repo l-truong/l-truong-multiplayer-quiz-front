@@ -1,11 +1,9 @@
 export default {
   axios: {
-    //baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com'
-    baseUrl: 'http://localhost:3000/'
+    baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com'
   },
   socket: {
-    //baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com/',
-    baseUrl: 'http://localhost:3000/'
+    baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com/',
   },
   localStorage: {
     sufix: 'l-truong-multiplayer-quiz-back.',
