@@ -12,7 +12,7 @@
 
       <div 
         class='flex-grow-1 overflow-auto mb-3'
-        :class='{ "pe-3": isOverflowing }'
+        :class='{ "pe-3": scrollBackToTop }'
         ref='scrollableDiv'
         @scroll='handleScroll($refs.scrollableDiv)'
       >
@@ -22,11 +22,12 @@
           <div class='d-flex flex-row justify-content-between gap-3'>
             <div v-for='(option, optionIndex) in question.options' :key='optionIndex' class='text-center'
               :style='{ color: getOptionColor(option, question.correctAnswer, answers[questionIndex]) }'> 
-              {{ option }}
+                <template v-if='option == answers[questionIndex]'><span class='fw-bold'>[ {{ option }} ]</span></template>
+                <template v-else><span>{{ option }}</span></template>
             </div>
           </div> 
           <i :class='[ "fa-solid", question.correctAnswer === answers[questionIndex] ? "fa-check" : 
-          answers[questionIndex] !== null ? "fa-xmark" : "fa-minus" ]'></i>
+          answers[questionIndex] !== null && answers[questionIndex] !== undefined ? "fa-xmark" : "fa-minus" ]'></i>
         </div>
       </div>
 

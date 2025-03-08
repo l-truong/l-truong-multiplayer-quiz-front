@@ -1,5 +1,6 @@
 { 
     "app": {
+        "loading": "Chargement...",
         "language": {
             "eng": "Anglais",
             "fr": "Français"

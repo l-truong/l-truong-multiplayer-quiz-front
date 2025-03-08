@@ -1,8 +1,9 @@
 <template>
-  <div class='bg-secondary-subtle container d-flex justify-content-center align-items-center p-0'>
+  <div class='bg-secondary-subtle container d-flex justify-content-center align-items-center p-0'>   
     <template v-if='this.categories === null && this.stats === null'>
-      <div class='d-flex justify-content-center align-items-center h-100 w-100 p-3'>
+      <div class='d-flex flex-column justify-content-center align-items-center h-100 w-100 p-3'>
         <div class='spinner-border text-primary' role='status'></div>
+        <div class='pt-2'>{{ $t('app.loading') }}</div>
       </div>
     </template>
     <template v-else-if='this.categories !== false && this.stats !== false'>
@@ -18,7 +19,7 @@
   
   <div v-if='!isCategoriesPage' class='d-flex justify-content-end mt-2 mb-2 languageSelector'>
     <div class='pe-2'>
-      <button v-if='isSmallScreen' class='btn btn-secondary' @click='scrollToTop'>
+      <button v-if='showGoToTopButton' class='btn btn-secondary' @click='scrollToTop'>
         <i class='fa-solid fa-chevron-up'></i>
       </button>
     </div>
@@ -76,6 +77,7 @@ export default {
     };
   },
   mounted() {
+    console.log("mounted")
     this.updateDataByLanguage();
     this.checkWindowWidth();
     window.addEventListener('resize', this.checkWindowWidth);
@@ -90,7 +92,7 @@ export default {
       await this.updatedStatsByLanguage();
     },
     async updatedCategoriesByLanguage() {
-      this.categories = await categoriesService.getCategories(this.$i18n.locale); 
+      this.categories = await categoriesService.getCategories(this.$i18n.locale);
       if (this.categories && this.categories !== false) {
         this.$setCategories(this.categories);
       }

@@ -3,7 +3,7 @@ export default {
     baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com'
   },
   socket: {
-    baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com/'
+    baseUrl: 'https://l-truong-multiplayer-quiz-back.onrender.com/',
   },
   localStorage: {
     sufix: 'l-truong-multiplayer-quiz-back.',
@@ -12,7 +12,7 @@ export default {
     popupDismissedAt: 'popupDismissedAt'
   },
   toast: {
-    maxToasts: 7,
+    maxToasts: 5,
     newestOnTop: false,
     timeout: 2000
   },

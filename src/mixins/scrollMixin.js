@@ -10,10 +10,13 @@ export const scrollMixin = {
   },
   mounted() {
     window.addEventListener('resize', this.checkWindowWidth);    
+    window.addEventListener('scroll', this.checkOverflow);
     this.checkWindowWidth();
+    this.checkOverflow();
   },
   beforeDestroy() {
     window.removeEventListener('resize', this.checkWindowWidth);
+    window.removeEventListener('scroll', this.checkOverflow);
   },
   methods: {
     checkWindowWidth() {      
@@ -21,6 +24,9 @@ export const scrollMixin = {
       if (this.isSmallScreen) {
         this.scrollBackToTop = false;      
       }
+    },
+    checkOverflow() {
+      this.isOverflowing = document.documentElement.scrollHeight > window.innerHeight;
     },
     handleScroll(scrollTarget) {      
       if (scrollTarget && scrollTarget.scrollTo) {
@@ -42,4 +48,9 @@ export const scrollMixin = {
       }
     }
   },
+  computed: {
+    showGoToTopButton() {
+      return this.isSmallScreen && this.isOverflowing;
+    }
+  }
 };

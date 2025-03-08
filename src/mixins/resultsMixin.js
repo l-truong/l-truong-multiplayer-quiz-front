@@ -9,6 +9,8 @@ export const resultsMixin = {
           return getComputedStyle(root).getPropertyValue('--right-answer-color').trim();
         case option === userAnswer:
           return getComputedStyle(root).getPropertyValue('--wrong-answer-color').trim();
+        case option === correctAnswer:
+          return getComputedStyle(root).getPropertyValue('--right-answer-color').trim();
         default:
           return getComputedStyle(root).getPropertyValue('--neutral-answer-color').trim();
       }
